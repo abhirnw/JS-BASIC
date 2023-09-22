@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     let array = [0]
+    // for (let index = 1; index < array.length; index++) {
+    //     console.log(index);
+    // }
+
+    console.log(array.length);
+    for( let index = 0; index < 1000; index++){
+        // console.log(index,'index');
+        if(index){
+            console.log(index,'First Check HERE', new Date());
+            for (let index = 10; index < 100; index++) {
+                console.log(index,'Second Loop IF Check HERE', new Date());
+                for (let index = 20; index < 10; index++) {
+                    console.log(index,'Third Loop IF Check HERE', new Date());
+                    
+                }
+                
+            }
+        }
+        console.log('NOW ELSE CHECK',new Date());
+    }
+
+    let data = 0
+    let newData = false
+    let myData = ""
+    if(data || newData || myData){
+        // console.log(data || newData || myData);
+    }
+
+    let oldTime = "19:56:16"
+    let newTime = "19:57:17"
+
+
+</script>
+</html>
