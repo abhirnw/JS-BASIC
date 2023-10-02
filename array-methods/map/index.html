@@ -33,23 +33,42 @@
             name: 'Abhi Sojitra',
             age: 23,
             phone: 9106682536,
+            school: 'test',
+            grade: 'b+',
+            blood: 'a+',
+            bank: 'test',
+            adhar: '2546929926309'
         },
         {
             name: 'Jay Dev',
             age: 20,
             phone: 9106682536,
+            school: 'test',
+            grade: 'b+',
+            blood: 'a+',
+            bank: 'test',
+            adhar: '2546929926309'
         },
         {
             name: 'Mahesh Patel',
             age: 25,
             phone: 9106682536,
+            school: 'test',
+            grade: 'b+',
+            blood: 'a+',
+            bank: 'test',
+            adhar: '2546929926309'
         },];
 
     // map returns a new array
     
     function getName(userRecords){
         
-        let getUserFullname = userRecords.map(d => d.name)
+        let getUserFullname = userRecords.map(d => ({
+            name : d.name,
+            age : d.age,
+            adhar: d.adhar
+        }))
         return getUserFullname
     }
 
