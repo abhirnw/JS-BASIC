@@ -32,11 +32,11 @@
     // Calling
     run();
 
-    // async function logMovies() {
-    //     await fetch("https://jsonplaceholder.typicode.com/todos")
-    //     .then(data => data.json())
-    //     .then(json => console.log(json))
-    // }
+    async function logMovies() {
+        await fetch("https://jsonplaceholder.typicode.com/todos")
+            .then(data => data.json())
+            .then(json => console.log(json))
+    }
 
     async function getMovieData() {
         await fetch("https://jsonplaceholder.typicode.com/todos").then(movies => movies.json()).then(json => console.log(json))
