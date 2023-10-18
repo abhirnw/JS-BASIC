@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<p id="result"></p>
+    <p id="result"></p>
 </body>
 <script>
 
@@ -26,7 +26,7 @@
             school_name: "test"
         }
 
-        return { user, ...schoolInfo}
+        return { user, ...schoolInfo }
     }
 
     // Invoke Function
@@ -37,16 +37,14 @@
     let product = 'test'
 
 
-    function calculateData(a,b){
-
-         ==
-        if(a !== 4){
-            let result = a+b
+    function calculateData(a, b) {
+        if (a !== 4) {
+            let result = a + b
             return result
         }
     }
 
-    let dataget = calculateData(4,5)
+    let dataget = calculateData(4, 5)
     document.getElementById('result').innerHTML = dataget
 
 
