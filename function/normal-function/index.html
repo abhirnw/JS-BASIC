@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
-      // Create Function
-      function test() {
-        console.log("ok");
-      }
 
-      test();
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-      (function () {
-        let x = "Hello!!"; // I will invoke myself
+<body>
+  <script>
+    // Create Function
+    function test() {
+      console.log("ok");
+    }
 
-      })();
+    test();
 
-(function testAut() {
-console.log('made by me');
-}) ()
+    (function () {
+      let x = "Hello!!"; // I will invoke myself
 
-    </script>
-  </body>
+    })();
+
+    (function testAut() {
+      console.log('made by me');
+    })()
+
+  </script>
+</body>
+
 </html>
